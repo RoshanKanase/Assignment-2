@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="globals.css" />
+        <style>
+            @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0px;
+    height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+    text-decoration: none;
+}
+
+        </style>
+        <link rel="stylesheet" href="styleguide.css" />
+        <style>
+            :root {
+    --text: rgba(50, 50, 50, 1);
+}
+
+        </style>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .events {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.events .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 428.0px;
+    height: 926.0px;
+    position: relative;
+}
+
+.events .text-wrapper {
+    position: absolute;
+    top: 110px;
+    left: 11px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.events .screenshot {
+    position: absolute;
+    width: 416px;
+    height: 221px;
+    top: 157px;
+    left: 0;
+    object-fit: cover;
+}
+
+.events .overlap {
+    position: absolute;
+    width: 426px;
+    height: 167px;
+    top: 409px;
+    left: 6px;
+}
+
+.events .group {
+    position: absolute;
+    width: 426px;
+    height: 167px;
+    top: 0;
+    left: 0;
+}
+
+.events .image {
+    height: 109px;
+    top: 43px;
+    position: absolute;
+    width: 112px;
+    left: 0;
+}
+
+.events .text-wrapper-2 {
+    position: absolute;
+    width: 279px;
+    top: 54px;
+    left: 129px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .p {
+    position: absolute;
+    width: 150px;
+    top: 121px;
+    left: 161px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .text-wrapper-3 {
+    position: absolute;
+    width: 242px;
+    top: 145px;
+    left: 161px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: underline;
+}
+
+.events .icons-map-pin {
+    position: absolute;
+    width: 23px;
+    height: 22px;
+    top: 144px;
+    left: 129px;
+}
+
+.events .icons-clock {
+    width: 23px;
+    top: 118px;
+    left: 129px;
+    position: absolute;
+    height: 22px;
+}
+
+.events .weekly-bite {
+    position: absolute;
+    width: 268px;
+    top: 2px;
+    left: 1px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3a3a3a;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .text-wrapper-4 {
+    width: 86px;
+    top: 0;
+    left: 330px;
+    color: #ff8f8f;
+    font-size: 22px;
+    letter-spacing: 0.66px;
+    text-decoration: underline;
+    position: absolute;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.events .frame {
+    position: absolute;
+    width: 71px;
+    height: 18px;
+    top: 3px;
+    left: 327px;
+}
+
+.events .navagation-bar {
+    position: absolute;
+    width: 429px;
+    height: 99px;
+    top: 827px;
+    left: 0;
+}
+
+.events .overlap-group {
+    position: relative;
+    height: 99px;
+}
+
+.events .rectangle {
+    height: 81px;
+    top: 18px;
+    left: 0;
+    background-color: #656649;
+    position: absolute;
+    width: 429px;
+}
+
+.events .ellipse {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 0;
+    left: 169px;
+}
+
+.events .profile {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 33px;
+    left: 363px;
+}
+
+.events .icons-user {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 4px;
+}
+
+.events .text-wrapper-5 {
+    position: absolute;
+    width: 38px;
+    top: 35px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .map-home {
+    position: absolute;
+    width: 73px;
+    height: 67px;
+    top: 16px;
+    left: 178px;
+}
+
+.events .text-wrapper-6 {
+    width: 71px;
+    top: 52px;
+    left: 0;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0;
+    position: absolute;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.events .icons-map {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 11px;
+}
+
+.events .events-wrapper {
+    position: absolute;
+    width: 43px;
+    height: 54px;
+    top: 29px;
+    left: 26px;
+    overflow: hidden;
+}
+
+.events .div-2 {
+    position: relative;
+    width: 42px;
+    height: 50px;
+    top: 4px;
+    left: 3px;
+}
+
+.events .text-wrapper-7 {
+    position: absolute;
+    width: 40px;
+    top: 35px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .icons-calendar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 5px;
+}
+
+.events .favorites-wrapper {
+    position: absolute;
+    width: 77px;
+    height: 61px;
+    top: 29px;
+    left: 271px;
+}
+
+.events .favorites {
+    position: relative;
+    width: 71px;
+    height: 50px;
+    top: 4px;
+    left: 4px;
+}
+
+.events .text-wrapper-8 {
+    position: absolute;
+    width: 69px;
+    top: 35px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .icons-globe {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 18px;
+}
+
+.events .fresh-board-wrapper {
+    position: absolute;
+    width: 77px;
+    height: 53px;
+    top: 30px;
+    left: 83px;
+}
+
+.events .fresh-board {
+    position: relative;
+    width: 73px;
+    height: 49px;
+    top: 4px;
+    left: 3px;
+}
+
+.events .text-wrapper-9 {
+    position: absolute;
+    width: 71px;
+    top: 34px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .icons-clipboard {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 21px;
+}
+
+.events .frame-2 {
+    position: absolute;
+    width: 83px;
+    height: 53px;
+    top: 33px;
+    left: 265px;
+}
+
+.events .frame-3 {
+    position: absolute;
+    width: 47px;
+    height: 48px;
+    top: 35px;
+    left: 359px;
+}
+
+.events .img {
+    height: 117px;
+    top: 0;
+    left: -2397px;
+    position: absolute;
+    width: 429px;
+}
+
+.events .screenshot-wrapper {
+    position: absolute;
+    width: 429px;
+    height: 117px;
+    top: -7px;
+    left: -1px;
+    background-color: #656649;
+}
+
+.events .screenshot-2 {
+    position: absolute;
+    width: 97px;
+    height: 82px;
+    top: 17px;
+    left: 8px;
+    object-fit: cover;
+}
+
+.events .group-2 {
+    position: absolute;
+    width: 427px;
+    height: 184px;
+    top: 611px;
+    left: 5px;
+}
+
+.events .text-wrapper-10 {
+    position: absolute;
+    width: 215px;
+    top: 2px;
+    left: 1px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3a3a3a;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .image-2 {
+    height: 112px;
+    top: 49px;
+    position: absolute;
+    width: 112px;
+    left: 0;
+}
+
+.events .text-wrapper-11 {
+    width: 273px;
+    top: 49px;
+    left: 126px;
+    color: #3a3a3a;
+    font-size: 22px;
+    position: absolute;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .text-wrapper-12 {
+    position: absolute;
+    width: 146px;
+    top: 116px;
+    left: 158px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .text-wrapper-13 {
+    width: 257px;
+    top: 141px;
+    left: 158px;
+    color: var(--text);
+    font-size: 14px;
+    text-decoration: underline;
+    position: absolute;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.events .icons-map-pin-2 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 141px;
+    left: 126px;
+}
+
+.events .icons-clock-2 {
+    width: 22px;
+    top: 114px;
+    left: 126px;
+    position: absolute;
+    height: 22px;
+}
+
+.events .text-wrapper-14 {
+    width: 86px;
+    top: 0;
+    left: 331px;
+    color: #ff8f8f;
+    font-size: 22px;
+    letter-spacing: 0.66px;
+    text-decoration: underline;
+    position: absolute;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    line-height: normal;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="events">
+            <div class="div">
+                <div class="text-wrapper">Nearby Events</div>
+                <img class="screenshot" src="calender(2).png" />
+                <div class="overlap">
+                    <div class="group">
+                        <img class="image" src="image 7.png" />
+                        <div class="text-wrapper-2">Satnam vegetables</div>
+                        <p class="p">8:00 AM - 2:00 PM</p>
+                        <p class="text-wrapper-3">Kalupur Vegetable Market, Prem Darwaza, Saraspur, Ahmedabad, Gujarat 380002</p>
+                        <img class="icons-map-pin" src="map-pin.png" />
+                        <img class="icons-clock" src="clock.png" />
+                        <div class="weekly-bite">Weekly 2-bite Challenge</div>
+                        <div class="text-wrapper-4">MORE</div>
+                    </div>
+                    <div class="frame"></div>
+                </div>
+                <div class="navagation-bar">
+                    <div class="overlap-group">
+                        <div class="rectangle"></div>
+                        <img class="ellipse" src="Ellipse 47.png" />
+                        <div class="profile">
+                            <img class="icons-user" src="user.png" />
+                            <div class="text-wrapper-5">Profile</div>
+                        </div>
+                        <div class="map-home">
+                            <div class="text-wrapper-6">Home</div>
+                            <img class="icons-map" src="map.svg" />
+                        </div>
+                        <div class="events-wrapper">
+                            <div class="div-2">
+                                <div class="text-wrapper-7">Events</div>
+                                <img class="icons-calendar" src="calendar.png" />
+                            </div>
+                        </div>
+                        <div class="favorites-wrapper">
+                            <div class="favorites">
+                                <div class="text-wrapper-8">What’s New</div>
+                                <img class="icons-globe" src="globe.png" />
+                            </div>
+                        </div>
+                        <div class="fresh-board-wrapper">
+                            <div class="fresh-board">
+                                <div class="text-wrapper-9">Fresh Board</div>
+                                <img class="icons-clipboard" src="clipboard.png" />
+                            </div>
+                        </div>
+                        <div class="frame-2"></div>
+                        <div class="frame-3"></div>
+                    </div>
+                </div>
+                <img class="img" src="logo(e).png" />
+                <div class="screenshot-wrapper"><img class="screenshot-2" src="logo(e).png" /></div>
+                <div class="group-2">
+                    <div class="text-wrapper-10">Beet Farms Pop-Up</div>
+                    <img class="image-2" src="image 6.png" />
+                    <p class="text-wrapper-11">The Agricultural Produce Market Committee</p>
+                    <p class="text-wrapper-12">3:00 PM - 7:00 PM</p>
+                    <p class="text-wrapper-13">
+                        THE AGRICULTURAL MARKET COMMITTEE, Vasna Rd, APMC Market, Ronak Park Society, Sanklit Nagar, Juhapura,
+                        Ahmedabad, Gujarat 380055
+                    </p>
+                    <img class="icons-map-pin-2" src="map-pin.png" />
+                    <img class="icons-clock-2" src="clock.png" />
+                    <div class="text-wrapper-14">MORE</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
