@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="globals.css" />
+        <style>
+            @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0px;
+    height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+    text-decoration: none;
+}
+        </style>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .profile {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 428.0px;
+    height: 926.0px;
+    position: relative;
+}
+
+.profile .navagation-bar {
+    position: absolute;
+    width: 429px;
+    height: 99px;
+    top: 827px;
+    left: 0;
+}
+
+.profile .overlap-group {
+    position: relative;
+    height: 99px;
+}
+
+.profile .rectangle {
+    width: 429px;
+    height: 81px;
+    top: 18px;
+    background-color: #656649;
+    position: absolute;
+    left: 0;
+}
+
+.profile .ellipse {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 0;
+    left: 169px;
+}
+
+.profile .div-2 {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 33px;
+    left: 363px;
+}
+
+.profile .icons-user {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 4px;
+}
+
+.profile .text-wrapper {
+    position: absolute;
+    width: 38px;
+    top: 35px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.profile .map-home {
+    position: absolute;
+    width: 73px;
+    height: 67px;
+    top: 16px;
+    left: 178px;
+}
+
+.profile .text-wrapper-2 {
+    position: absolute;
+    width: 71px;
+    top: 52px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.profile .icons-map {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 11px;
+}
+
+.profile .frame {
+    position: absolute;
+    width: 43px;
+    height: 54px;
+    top: 29px;
+    left: 26px;
+    overflow: hidden;
+}
+
+.profile .events {
+    position: relative;
+    width: 42px;
+    height: 50px;
+    top: 4px;
+    left: 3px;
+}
+
+.profile .text-wrapper-3 {
+    position: absolute;
+    width: 40px;
+    top: 35px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.profile .icons-calendar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 5px;
+}
+
+.profile .favorites-wrapper {
+    position: absolute;
+    width: 77px;
+    height: 61px;
+    top: 29px;
+    left: 271px;
+}
+
+.profile .favorites {
+    position: relative;
+    width: 71px;
+    height: 50px;
+    top: 4px;
+    left: 4px;
+}
+
+.profile .text-wrapper-4 {
+    position: absolute;
+    width: 69px;
+    top: 35px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.profile .icons-globe {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 18px;
+}
+
+.profile .fresh-board-wrapper {
+    position: absolute;
+    width: 77px;
+    height: 53px;
+    top: 30px;
+    left: 83px;
+}
+
+.profile .fresh-board {
+    position: relative;
+    width: 73px;
+    height: 49px;
+    top: 4px;
+    left: 3px;
+}
+
+.profile .text-wrapper-5 {
+    position: absolute;
+    width: 71px;
+    top: 34px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.profile .icons-clipboard {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 21px;
+}
+
+.profile .frame-2 {
+    position: absolute;
+    width: 83px;
+    height: 53px;
+    top: 33px;
+    left: 265px;
+}
+
+.profile .frame-3 {
+    position: absolute;
+    width: 47px;
+    height: 48px;
+    top: 35px;
+    left: 359px;
+}
+
+.profile .overlap {
+    position: absolute;
+    width: 429px;
+    height: 447px;
+    top: -10px;
+    left: 0;
+}
+
+.profile .frame-4 {
+    position: absolute;
+    width: 135px;
+    height: 28px;
+    top: 199px;
+    left: 98px;
+}
+
+.profile .rectangle-2 {
+    width: 429px;
+    height: 415px;
+    top: 0;
+    background-color: #656649;
+    backdrop-filter: blur(2px) brightness(100%);
+    -webkit-backdrop-filter: blur(2px) brightness(100%);
+    position: absolute;
+    left: 0;
+}
+
+.profile .rectangle-3 {
+    width: 428px;
+    height: 39px;
+    top: 380px;
+    background-color: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    left: 0;
+}
+
+.profile .USER-NAME {
+    position: absolute;
+    width: 159px;
+    top: 80px;
+    left: 222px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 0.90px;
+    line-height: normal;
+}
+
+.profile .edit {
+    position: absolute;
+    width: 85px;
+    height: 36px;
+    top: 175px;
+    left: 222px;
+}
+
+.profile .edit-wrapper {
+    position: relative;
+    width: 83px;
+    height: 36px;
+    background-image: url(./img/rectangle-1447.svg);
+    background-size: 100% 100%;
+}
+
+.profile .edit-2 {
+    position: absolute;
+    width: 54px;
+    top: 9px;
+    left: 15px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.48px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.profile .icons-settings {
+    position: absolute;
+    width: 27px;
+    height: 28px;
+    top: 179px;
+    left: 309px;
+}
+
+.profile .DESCREPTION {
+    position: absolute;
+    width: 360px;
+    height: 169px;
+    top: 227px;
+    left: 37px;
+}
+
+.profile .text-wrapper-6 {
+    position: absolute;
+    width: 110px;
+    top: 0;
+    left: 0;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0.60px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.profile .just-a-busy-mom {
+    position: absolute;
+    width: 356px;
+    top: 32px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0.60px;
+    line-height: normal;
+}
+
+.profile .tag {
+    position: absolute;
+    width: 215px;
+    height: 57px;
+    top: 390px;
+    left: 91px;
+}
+
+.profile .text-wrapper-7 {
+    position: absolute;
+    width: 64px;
+    top: 0;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.profile .text-wrapper-8 {
+    position: absolute;
+    width: 122px;
+    top: 0;
+    left: 89px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.profile .line {
+    position: absolute;
+    width: 102px;
+    height: 3px;
+    top: 416px;
+    left: 186px;
+}
+
+.profile .vector {
+    position: absolute;
+    width: 106px;
+    height: 83px;
+    top: 80px;
+    left: 37px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="profile">
+            <div class="div">
+                <div class="navagation-bar">
+                    <div class="overlap-group">
+                        <div class="rectangle"></div>
+                        <img class="ellipse" src="Ellipse 47.png" />
+                        <div class="div-2">
+                            <img class="icons-user" src="user.png" />
+                            <div class="text-wrapper">Profile</div>
+                        </div>
+                        <div class="map-home">
+                            <div class="text-wrapper-2">Home</div>
+                            <img class="icons-map" src="map.svg" />
+                        </div>
+                        <div class="frame">
+                            <div class="events">
+                                <div class="text-wrapper-3">Events</div>
+                                <img class="icons-calendar" src="calendar.png" />
+                            </div>
+                        </div>
+                        <div class="favorites-wrapper">
+                            <div class="favorites">
+                                <div class="text-wrapper-4">What’s New</div>
+                                <img class="icons-globe" src="globe.png" />
+                            </div>
+                        </div>
+                        <div class="fresh-board-wrapper">
+                            <div class="fresh-board">
+                                <div class="text-wrapper-5">Fresh Board</div>
+                                <img class="icons-clipboard" src="clipboard.png" />
+                            </div>
+                        </div>
+                        <div class="frame-2"></div>
+                        <div class="frame-3"></div>
+                    </div>
+                </div>
+                <div class="overlap">
+                    <div class="frame-4"></div>
+                    <div class="rectangle-2"></div>
+                    <div class="rectangle-3"></div>
+                    <div class="USER-NAME">USER<br />NAME</div>
+                    <div class="edit">
+                        <div class="edit-wrapper"><div class="edit-2">EDIT</div></div>
+                    </div>
+                    <img class="icons-settings" src="settings.png" />
+                    <div class="DESCREPTION">
+                        <div class="text-wrapper-6">Description</div>
+                        <p class="just-a-busy-mom">
+                            Just a busy mom trying to create healthy meals for my family and support local businesses at the same
+                            time.<br />Certified beet freak 😜
+                        </p>
+                    </div>
+                    <div class="tag">
+                        <div class="text-wrapper-7">Saved</div>
+                        <div class="text-wrapper-8">Recent view</div>
+                    </div>
+                    <img class="line" src="Line 17.png" />
+                    <img class="vector" src="Vector 2.png" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
