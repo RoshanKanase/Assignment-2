@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="globals.css" />
+        <style>
+            @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0px;
+    height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+    text-decoration: none;
+}
+
+        </style>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .ON-BOARDING {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.ON-BOARDING .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 428.0px;
+    height: 926.0px;
+    position: relative;
+}
+
+.ON-BOARDING .icons-chevron-left {
+    position: absolute;
+    width: 26px;
+    height: 28px;
+    top: 30px;
+    left: 0;
+}
+
+.ON-BOARDING .line {
+    position: absolute;
+    width: 428px;
+    height: 3px;
+    top: 68px;
+    left: 0;
+    object-fit: cover;
+}
+
+.ON-BOARDING .group {
+    position: absolute;
+    width: 444px;
+    height: 142px;
+    top: 82px;
+    left: 11px;
+}
+
+.ON-BOARDING .image {
+    width: 116px;
+    height: 101px;
+    top: 40px;
+    position: absolute;
+    left: 0;
+}
+
+.ON-BOARDING .text-wrapper {
+    position: absolute;
+    width: 284px;
+    top: 40px;
+    left: 131px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ON-BOARDING .p {
+    position: absolute;
+    width: 152px;
+    top: 101px;
+    left: 164px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.ON-BOARDING .text-wrapper-2 {
+    position: absolute;
+    width: 246px;
+    top: 123px;
+    left: 164px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.ON-BOARDING .icons-map-pin {
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    top: 122px;
+    left: 131px;
+}
+
+.ON-BOARDING .icons-clock {
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    top: 98px;
+    left: 131px;
+}
+
+.ON-BOARDING .weekly-bite {
+    position: absolute;
+    width: 279px;
+    top: 2px;
+    left: 1px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3a3a3a;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.ON-BOARDING .text-wrapper-3 {
+    position: absolute;
+    width: 90px;
+    top: 0;
+    left: 344px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ff8f8f;
+    font-size: 22px;
+    letter-spacing: 0.66px;
+    line-height: normal;
+    text-decoration: underline;
+}
+
+.ON-BOARDING .overlap {
+    position: absolute;
+    width: 429px;
+    height: 664px;
+    top: 262px;
+    left: -1px;
+}
+
+.ON-BOARDING .frame {
+    position: absolute;
+    width: 407px;
+    height: 620px;
+    top: 0;
+    left: 12px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.ON-BOARDING .frame::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.ON-BOARDING .group-2 {
+    position: relative;
+    width: 373px;
+    height: 726px;
+    top: 9px;
+}
+
+.ON-BOARDING .text-wrapper-4 {
+    position: absolute;
+    width: 271px;
+    top: 0;
+    left: 2px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3a3a3a;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.ON-BOARDING .overlap-group {
+    position: absolute;
+    width: 360px;
+    height: 364px;
+    top: 33px;
+    left: 2px;
+}
+
+.ON-BOARDING .kids-try-two-bites {
+    position: absolute;
+    width: 360px;
+    top: 0;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ON-BOARDING .img {
+    width: 328px;
+    height: 174px;
+    top: 190px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+}
+
+.ON-BOARDING .the-benefits-of-this {
+    position: absolute;
+    width: 367px;
+    top: 405px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ON-BOARDING .navagation-bar {
+    position: absolute;
+    width: 429px;
+    height: 99px;
+    top: 565px;
+    left: 0;
+}
+
+.ON-BOARDING .overlap-2 {
+    position: relative;
+    height: 99px;
+}
+
+.ON-BOARDING .rectangle {
+    position: absolute;
+    width: 429px;
+    height: 81px;
+    top: 18px;
+    left: 0;
+    background-color: #656649;
+}
+
+.ON-BOARDING .ellipse {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 0;
+    left: 169px;
+}
+
+.ON-BOARDING .profile {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 33px;
+    left: 363px;
+}
+
+.ON-BOARDING .icons-user {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 4px;
+}
+
+.ON-BOARDING .text-wrapper-5 {
+    position: absolute;
+    width: 38px;
+    top: 35px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ON-BOARDING .map-home {
+    position: absolute;
+    width: 73px;
+    height: 67px;
+    top: 16px;
+    left: 178px;
+}
+
+.ON-BOARDING .text-wrapper-6 {
+    position: absolute;
+    width: 71px;
+    top: 52px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ON-BOARDING .icons-map {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 11px;
+}
+
+.ON-BOARDING .events-wrapper {
+    position: absolute;
+    width: 43px;
+    height: 54px;
+    top: 29px;
+    left: 26px;
+    overflow: hidden;
+}
+
+.ON-BOARDING .events {
+    position: relative;
+    width: 42px;
+    height: 50px;
+    top: 4px;
+    left: 3px;
+}
+
+.ON-BOARDING .text-wrapper-7 {
+    position: absolute;
+    width: 40px;
+    top: 35px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ON-BOARDING .icons-calendar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 5px;
+}
+
+.ON-BOARDING .favorites-wrapper {
+    position: absolute;
+    width: 77px;
+    height: 61px;
+    top: 29px;
+    left: 271px;
+}
+
+.ON-BOARDING .favorites {
+    position: relative;
+    width: 71px;
+    height: 50px;
+    top: 4px;
+    left: 4px;
+}
+
+.ON-BOARDING .text-wrapper-8 {
+    position: absolute;
+    width: 69px;
+    top: 35px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ON-BOARDING .icons-globe {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 18px;
+}
+
+.ON-BOARDING .fresh-board-wrapper {
+    position: absolute;
+    width: 77px;
+    height: 53px;
+    top: 30px;
+    left: 83px;
+}
+
+.ON-BOARDING .fresh-board {
+    position: relative;
+    width: 73px;
+    height: 49px;
+    top: 4px;
+    left: 3px;
+}
+
+.ON-BOARDING .text-wrapper-9 {
+    position: absolute;
+    width: 71px;
+    top: 34px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.ON-BOARDING .icons-clipboard {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 21px;
+}
+
+.ON-BOARDING .frame-2 {
+    position: absolute;
+    width: 83px;
+    height: 53px;
+    top: 33px;
+    left: 265px;
+}
+
+.ON-BOARDING .frame-3 {
+    position: absolute;
+    width: 47px;
+    height: 48px;
+    top: 35px;
+    left: 359px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="ON-BOARDING">
+            <div class="div">
+                <img class="icons-chevron-left" src="chevron-left.png" />
+                <img class="line" src="Line 15.png" />
+                <div class="group">
+                    <img class="image" src="image 9.png" />
+                    <div class="text-wrapper">Satnam vegetables</div>
+                    <p class="p">8:00 AM - 2:00 PM</p>
+                    <p class="text-wrapper-2">Kalupur Vegetable Market, Prem Darwaza, Saraspur, Ahmedabad, Gujarat 380002</p>
+                    <img class="icons-map-pin" src="map-pin.png" />
+                    <img class="icons-clock" src="clock.png" />
+                    <div class="weekly-bite">Weekly 2-bite Challenge</div>
+                    <div class="text-wrapper-3">MORE</div>
+                </div>
+                <div class="overlap">
+                    <div class="frame">
+                        <div class="group-2">
+                            <div class="text-wrapper-4">How to Participate</div>
+                            <div class="overlap-group">
+                                <p class="kids-try-two-bites">
+                                    kids try two bites of a new fruit/vegetable. Even if they don&#39;t like what they eat, they still get
+                                    $2 in market tokens to spend on produce for being brave and trying something new. These tokens can
+                                    only be used for fresh produce at the market.
+                                </p>
+                                <img class="img" src="image 28.png" />
+                            </div>
+                            <p class="the-benefits-of-this">
+                                The benefits of this program are wide-reaching:<br />Farmers benefit from customers buying fresh produce
+                                directly from them at the farmers market.<br />Kids are empowered to make healthy food choices on their
+                                own by having the direct buying power and learn financial literacy using the $2 tokens. Through both the
+                                Two-Bite Challenge and market activities, they get exposure healthy food options that will be
+                                foundational to maintaining a healthy lifestyle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="navagation-bar">
+                        <div class="overlap-2">
+                            <div class="rectangle"></div>
+                            <img class="ellipse" src="Ellipse 47.png" />
+                            <div class="profile">
+                                <img class="icons-user" src="user.png" />
+                                <div class="text-wrapper-5">Profile</div>
+                            </div>
+                            <div class="map-home">
+                                <div class="text-wrapper-6">Home</div>
+                                <img class="icons-map" src="map.svg" />
+                            </div>
+                            <div class="events-wrapper">
+                                <div class="events">
+                                    <div class="text-wrapper-7">Events</div>
+                                    <img class="icons-calendar" src="calendar.png" />
+                                </div>
+                            </div>
+                            <div class="favorites-wrapper">
+                                <div class="favorites">
+                                    <div class="text-wrapper-8">What’s New</div>
+                                    <img class="icons-globe" src="globe.png" />
+                                </div>
+                            </div>
+                            <div class="fresh-board-wrapper">
+                                <div class="fresh-board">
+                                    <div class="text-wrapper-9">Fresh Board</div>
+                                    <img class="icons-clipboard" src="clipboard.png" />
+                                </div>
+                            </div>
+                            <div class="frame-2"></div>
+                            <div class="frame-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
