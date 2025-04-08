@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .log-in {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.log-in .div {
+  background-color: #ffffff;
+  width: 428.0px;
+  height: 926.0px;
+  position: relative;
+}
+
+.log-in .text-wrapper {
+  position: absolute;
+  top: 317px;
+  left: 33px;
+  font-family: "Gupter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.log-in .overlap-group {
+  position: absolute;
+  width: 382px;
+  height: 89px;
+  top: 428px;
+  left: 12px;
+}
+
+.log-in .text-wrapper-2 {
+  position: absolute;
+  width: 140px;
+  top: 0;
+  left: 0;
+  font-family: "Gupter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in .rectangle {
+  top: 34px;
+  left: 21px;
+  position: absolute;
+  width: 361px;
+  height: 55px;
+  background-color: #bac0ca;
+}
+
+.log-in .mail-rounded {
+  position: absolute;
+  width: 28px;
+  height: 29px;
+  top: 889px;
+  left: 240px;
+}
+
+.log-in .text-wrapper-3 {
+  position: absolute;
+  top: 894px;
+  left: 272px;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in .vector {
+  position: absolute;
+  width: 83px;
+  height: 89px;
+  top: 139px;
+  left: 168px;
+}
+
+.log-in .rectangle-2 {
+  top: 353px;
+  left: 33px;
+  position: absolute;
+  width: 361px;
+  height: 55px;
+  background-color: #bac0ca;
+}
+
+.log-in .overlap {
+  position: absolute;
+  width: 105px;
+  height: 49px;
+  top: 571px;
+  left: 177px;
+  border-radius: 40px;
+}
+
+.log-in .button {
+  position: absolute;
+  width: 105px;
+  height: 49px;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  border-radius: 40px;
+  border: 1px solid;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.log-in .text-wrapper-4 {
+  position: absolute;
+  width: 53px;
+  top: 13px;
+  left: 25px;
+  text-shadow: 0px 4px 4px #00000040;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Gupter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: -0.23px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.log-in .screenshot {
+  position: absolute;
+  width: 97px;
+  height: 82px;
+  top: 13px;
+  left: 14px;
+  object-fit: cover;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="log-in">
+      <div class="div">
+        <div class="text-wrapper">USER NAME:</div>
+        <div class="overlap-group">
+          <div class="text-wrapper-2">PASSWORD:</div>
+          <div class="rectangle"></div>
+        </div>
+        <img class="mail-rounded" src="mail-rounded.png" />
+        <div class="text-wrapper-3">support@fmh.co.in</div>
+        <img class="vector" src="vector.png" />
+        <div class="rectangle-2"></div>
+        <div class="overlap">
+          <div class="button"></div>
+          <div class="text-wrapper-4">sign up</div>
+        </div>
+        <img class="screenshot" src="logo (2).png" />
+      </div>
+    </div>
+  </body>
+</html>
